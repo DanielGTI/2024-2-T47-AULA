@@ -4,20 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tópico 2</title>
-        <script>
+        <script type="text/javascript">
             function myFunction() {
-                document.getElementById("demo").innerHTML = "Alterado.";
+                document.getElementById("exemplo").innerHTML = "Alterado.";
+            }
+            function voltar() {
+                document.getElementById("exemplo").innerHTML = "Inicio...";
             }
         </script>
     </head>
  
     <body>
- 
         <h2>JavaScript criado no Head</h2>
- 
-        <p id="demo">Inicio..</p>
- 
+        <p id="exemplo">Inicio...</p>
         <button type="button" onclick="myFunction()">Clique aqui</button>
- 
+        <br><br>
+        <button type="button" onclick="voltar()">Voltar texto</button>
     </body>
 </html>
